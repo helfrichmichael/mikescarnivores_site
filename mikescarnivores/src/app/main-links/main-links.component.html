@@ -1,5 +1,8 @@
 <div>
-    <button mat-stroked-button class="full-width-button">
-        Shop
-    </button>
+    <a mat-stroked-button 
+            class="full-width-button"
+            *ngFor="let link of links"
+            [href]="link.url">
+        {{link.name}}
+</a>
 </div>
